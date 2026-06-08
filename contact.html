@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ | 株式会社 蒼天運輸</title>
+<meta name="description" content="株式会社蒼天運輸へのお問い合わせ・採用応募・お見積りのご依頼はこちらから。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="header__logo">
+      <span class="header__logo-mark">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="32" height="32" rx="6" fill="#0F2A4A"/>
+          <path d="M9 22 L9 14 L19 14 L19 18 L24 18 L27 22 L27 24 L25 24 A2 2 0 0 1 21 24 L15 24 A2 2 0 0 1 11 24 L9 24 Z" fill="#C8102E"/>
+          <circle cx="13" cy="24" r="2" fill="#fff"/>
+          <circle cx="23" cy="24" r="2" fill="#fff"/>
+        </svg>
+      </span>
+      <span class="header__logo-text">
+        <span data-cfg="company.nameEn">SOTEN TRANSPORT</span>
+        <small data-cfg="company.name">株式会社 蒼天運輸</small>
+      </span>
+    </a>
+    <nav class="header__nav">
+      <a href="index.html">トップ<span class="en">Home</span></a>
+      <a href="about.html">会社概要<span class="en">About</span></a>
+      <a href="services.html">事業内容<span class="en">Services</span></a>
+      <a href="recruit.html">採用情報<span class="en">Recruit</span></a>
+      <a href="contact.html" class="header__cta">お問い合わせ →</a>
+    </nav>
+    <button class="header__menu-btn" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__grid"></div>
+    <div class="container page-hero__inner">
+      <div class="page-hero__crumb">CONTACT</div>
+      <h1 class="page-hero__title">
+        お問い合わせ
+        <span class="en-sub">Get in Touch</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info fade-up">
+          <div class="contact-info__block">
+            <div class="contact-info__label">PHONE</div>
+            <h3 class="contact-info__title">お電話</h3>
+            <div class="contact-info__value" data-cfg="company.phone">03-5500-0000</div>
+            <p class="contact-info__sub" data-cfg="company.businessHours">平日 9:00 - 18:00（土日祝休）</p>
+          </div>
+          <div class="contact-info__block">
+            <div class="contact-info__label">EMAIL</div>
+            <h3 class="contact-info__title">メール</h3>
+            <p class="contact-info__sub" style="font-size:0.9375rem;color:var(--color-primary);font-family:var(--font-en);"><span data-cfg="company.email">info@soten-transport.example.co.jp</span></p>
+            <p class="contact-info__sub">24時間受付（返信は翌営業日以降になる場合があります）</p>
+          </div>
+          <div class="contact-info__block">
+            <div class="contact-info__label">ADDRESS</div>
+            <h3 class="contact-info__title">本社所在地</h3>
+            <p class="contact-info__sub" style="font-size:0.9375rem;line-height:1.9;">
+              〒<span data-cfg="company.addressZip">135-0061</span><br>
+              <span data-cfg="company.address">東京都江東区豊洲3-2-20 豊洲フロント7F</span>
+            </p>
+          </div>
+          <div class="contact-info__block">
+            <div class="contact-info__label">FAX</div>
+            <h3 class="contact-info__title">FAX</h3>
+            <div class="contact-info__value" data-cfg="company.fax" style="font-size:1.25rem;">03-5500-0001</div>
+          </div>
+        </div>
+
+        <form class="contact-form fade-up fade-up--delay-1" onsubmit="event.preventDefault();alert('お問い合わせありがとうございます。\n（このフォームはサンプルです。実際の送信は行われません。）');">
+
+          <div class="form-field">
+            <label class="form-label form-label--required">お問い合わせ種別</label>
+            <select class="form-select" required>
+              <option value="">選択してください</option>
+              <option>輸送・配送のご依頼</option>
+              <option>チャーター便のご依頼</option>
+              <option>倉庫保管のご相談</option>
+              <option>採用に関するお問い合わせ</option>
+              <option>取材・プレスのご依頼</option>
+              <option>その他</option>
+            </select>
+          </div>
+
+          <div class="form-field--row">
+            <div class="form-field">
+              <label class="form-label form-label--required">会社名</label>
+              <input type="text" class="form-input" placeholder="株式会社○○" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label">部署・役職</label>
+              <input type="text" class="form-input" placeholder="物流部 課長">
+            </div>
+          </div>
+
+          <div class="form-field--row">
+            <div class="form-field">
+              <label class="form-label form-label--required">お名前</label>
+              <input type="text" class="form-input" placeholder="山田 太郎" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label">フリガナ</label>
+              <input type="text" class="form-input" placeholder="ヤマダ タロウ">
+            </div>
+          </div>
+
+          <div class="form-field--row">
+            <div class="form-field">
+              <label class="form-label form-label--required">メールアドレス</label>
+              <input type="email" class="form-input" placeholder="example@company.co.jp" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label">電話番号</label>
+              <input type="tel" class="form-input" placeholder="03-0000-0000">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label form-label--required">お問い合わせ内容</label>
+            <textarea class="form-textarea" placeholder="ご依頼内容・ご質問など、できるだけ詳しくお書きください。" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">
+            送信する
+            <span class="btn__arrow">→</span>
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">ACCESS</div>
+        <h2 class="section-title">
+          アクセス
+          <span class="en-sub">How to Reach Us</span>
+        </h2>
+        <p class="section-lead">東京メトロ有楽町線「豊洲駅」3番出口より徒歩6分。ゆりかもめ「豊洲駅」より徒歩7分。お車でお越しの方は隣接のコインパーキングをご利用ください。</p>
+      </div>
+      <div class="fade-up">
+        <div class="map-placeholder">
+          <div class="map-placeholder__pin">
+            <svg class="map-placeholder__pin-icon" viewBox="0 0 40 56" fill="currentColor">
+              <path d="M20 0C9 0 0 9 0 20c0 14 20 36 20 36s20-22 20-36C40 9 31 0 20 0Zm0 28a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"/>
+            </svg>
+            <span class="map-placeholder__pin-label">本社・豊洲フロント</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__brand en">SOTEN TRANSPORT</div>
+  <div class="container site-footer__inner">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__logo">
+          <span class="site-footer__logo-mark">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="32" height="32" rx="6" fill="#fff"/>
+              <path d="M9 22 L9 14 L19 14 L19 18 L24 18 L27 22 L27 24 L25 24 A2 2 0 0 1 21 24 L15 24 A2 2 0 0 1 11 24 L9 24 Z" fill="#C8102E"/>
+              <circle cx="13" cy="24" r="2" fill="#0F2A4A"/>
+              <circle cx="23" cy="24" r="2" fill="#0F2A4A"/>
+            </svg>
+          </span>
+          <span data-cfg="company.nameEn">SOTEN TRANSPORT</span>
+        </div>
+        <div class="site-footer__address">
+          〒<span data-cfg="company.addressZip">135-0061</span><br>
+          <span data-cfg="company.address">東京都江東区豊洲3-2-20 豊洲フロント7F</span>
+        </div>
+        <div class="site-footer__contact" data-cfg="company.phone">03-5500-0000</div>
+      </div>
+      <div>
+        <div class="site-footer__col-title">Company</div>
+        <ul class="site-footer__links">
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="about.html#philosophy">経営理念</a></li>
+          <li><a href="about.html#history">沿革</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="site-footer__col-title">Services</div>
+        <ul class="site-footer__links">
+          <li><a href="services.html#general">一般貨物輸送</a></li>
+          <li><a href="services.html#charter">チャーター便</a></li>
+          <li><a href="services.html#warehouse">倉庫保管</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="site-footer__col-title">Connect</div>
+        <ul class="site-footer__links">
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="site-footer__copy">© 2026 SOTEN TRANSPORT CO., LTD.</div>
+      <div>Privacy Policy　／　Site Policy</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
