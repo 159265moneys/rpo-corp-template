@@ -1,8 +1,8 @@
 {
   "company": {
-    "name": "株式会社 蒼天運輸",
-    "nameShort": "蒼天運輸",
-    "nameEn": "SOTEN TRANSPORT CO., LTD.",
+    "name": "ミギノ運送株式会社",
+    "nameShort": "ミギノ運送",
+    "nameEn": "MIGINO TRANSPORT CO., LTD.",
     "tagline": "未来へ運ぶ、確かな信頼。",
     "taglineEn": "Delivering Trust to Tomorrow.",
     "description": "創業47年。一般貨物輸送・チャーター便・倉庫業を一貫して提供する、東京湾岸の総合物流企業です。",
@@ -14,13 +14,13 @@
     "safetyRate": 99.8,
     "warehouses": 3,
     "capital": "9,800万円",
-    "president": "田中 蒼一",
-    "presidentEn": "Soichi Tanaka",
+    "president": "山田 健一",
+    "presidentEn": "Kenichi Yamada",
     "address": "東京都江東区豊洲3-2-20 豊洲フロント7F",
     "addressZip": "135-0061",
     "phone": "03-5500-0000",
     "fax": "03-5500-0001",
-    "email": "info@soten-transport.example.co.jp",
+    "email": "info@migino-transport.example.co.jp",
     "businessHours": "平日 9:00 - 18:00（土日祝休）"
   },
   "brand": {
