@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/photos.css">
 </head>
-<body>
+<body class="recruit-page">
 
 <header class="site-header">
   <div class="site-header__inner">
@@ -42,41 +42,72 @@
 
 <main>
 
-  <section class="page-hero">
-    <div class="page-hero__bg" style="background-image:url('assets/images/page-hero-recruit.jpg');"></div>
-    <div class="page-hero__grid"></div>
-    <div class="container page-hero__inner">
-      <div class="page-hero__crumb">RECRUIT</div>
-      <h1 class="page-hero__title">
-        採用情報
-        <span class="en-sub">Join Our Team</span>
-      </h1>
+  <section class="recruit-hero">
+    <div class="recruit-hero__inner">
+      <div class="recruit-hero__copy">
+        <div class="recruit-hero__eyebrow">RECRUIT SITE</div>
+        <h1 class="recruit-hero__title">
+          安定と、<br>
+          やりがいを、<br>
+          まっすぐ運ぶ。
+        </h1>
+        <p class="recruit-hero__lead">創業47年。首都圏の物流を支える現場で、未経験から長く働ける環境を整えています。</p>
+        <div class="recruit-hero__actions">
+          <a href="#positions" class="btn btn--primary">募集職種を見る<span class="btn__arrow">→</span></a>
+          <a href="contact.html" class="btn btn--dark">応募する<span class="btn__arrow">→</span></a>
+        </div>
+      </div>
+      <div class="recruit-hero__visual" aria-label="物流倉庫で働く社員">
+        <div class="recruit-hero__photo recruit-hero__photo--main" style="background-image:url('assets/images/page-hero-recruit.jpg');"></div>
+        <div class="recruit-hero__photo recruit-hero__photo--sub" style="background-image:url('assets/images/hero-driver-portrait.jpg');"></div>
+        <div class="recruit-hero__badge">
+          <span>1978</span>
+          <small>SINCE</small>
+        </div>
+      </div>
+    </div>
+    <div class="recruit-hero__ticker">
+      <div class="recruit-hero__ticker-track">
+        <span>DRIVER</span><span>WAREHOUSE</span><span>OFFICE</span><span>MANAGEMENT</span><span>SAFETY FIRST</span><span>MIGINO TRANSPORT</span>
+        <span>DRIVER</span><span>WAREHOUSE</span><span>OFFICE</span><span>MANAGEMENT</span><span>SAFETY FIRST</span><span>MIGINO TRANSPORT</span>
+      </div>
     </div>
   </section>
 
   <!-- 採用メッセージ -->
-  <section class="section">
+  <section class="section recruit-intro">
     <div class="container">
       <div class="recruit-message fade-up">
-        <div class="section-label">Message</div>
+        <div class="recruit-message__label">ABOUT MIGINO</div>
         <h2 class="recruit-message__catch">
-          「運ぶ」を、<em>誇れる仕事</em>に。<br>
-          ミギノ運送は、人を育てる会社です。
+          「運ぶ」を、<em>誇れる仕事</em>に。
         </h2>
-        <p class="recruit-message__text">未経験から始めて10年、20年と働き続ける仲間が、ここには大勢います。免許取得サポート・業界最高水準の手当・教育研修「ミギノアカデミー」──私たちが投資するのは、設備でも車両でもなく、まず「人」です。だから安心して、長く、誇りを持って働けます。</p>
+        <p class="recruit-message__text">未経験から始めて10年、20年と働き続ける仲間が、ここには大勢います。免許取得サポート・教育研修「ミギノアカデミー」・働き方に合わせたシフト設計。私たちが投資するのは、設備でも車両でもなく、まず「人」です。</p>
+      </div>
+      <div class="recruit-proof fade-up">
+        <div class="recruit-proof__item">
+          <span>47</span><small>年の安定基盤</small>
+        </div>
+        <div class="recruit-proof__item">
+          <span>87</span><small>名の現場チーム</small>
+        </div>
+        <div class="recruit-proof__item">
+          <span>110</span><small>日以上の休日</small>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 募集職種タブ -->
-  <section class="section section--alt">
+  <section class="section section--alt" id="positions">
     <div class="container">
-      <div class="section-header section-header--center fade-up">
-        <div class="section-label">Positions</div>
+      <div class="section-header fade-up">
+        <div class="section-label">JOB</div>
         <h2 class="section-title">
-          募集職種
+          職種を知る
           <span class="en-sub">Open Positions</span>
         </h2>
+        <p class="section-lead">現場を動かすドライバー、倉庫、事務、管理。仕事内容と条件を、職種別に確認できます。</p>
       </div>
 
       <div class="position-tabs fade-up">
@@ -209,15 +240,15 @@
   </section>
 
   <!-- 社員ボイス -->
-  <section class="section">
+  <section class="section recruit-voices-section">
     <div class="container">
-      <div class="section-header section-header--center fade-up">
-        <div class="section-label">Voices</div>
+      <div class="section-header fade-up">
+        <div class="section-label">INTERVIEW</div>
         <h2 class="section-title">
-          社員の声
+          様々な働き方を知る
           <span class="en-sub">Voices from Our Team</span>
         </h2>
-        <p class="section-lead">未経験で入社した若手から、20年以上勤めるベテランまで。ミギノ運送で働く3人の本音を聞きました。</p>
+        <p class="section-lead">未経験で入社した若手から、20年以上勤めるベテランまで。ミギノ運送で働く社員の本音を聞きました。</p>
       </div>
 
       <div class="voices">
@@ -269,6 +300,23 @@
           <div class="voice-card__body">
             <h3 class="voice-card__catch">「人を育てた数だけ、<br>会社が強くなる」</h3>
             <p class="voice-card__text">川崎倉庫の拠点長を務めています。私自身、2tドライバーから始まり、4t・10tと経験を積み、今は20名の部下を持つ立場です。会社が一貫してブレないのは「人に投資する」という方針。だからこそ、長く働く社員が多く、現場の知見が積み上がっていく。それが、お客様への提供価値に直結していると実感します。</p>
+          </div>
+        </article>
+
+        <article class="voice-card fade-up fade-up--delay-3">
+          <div class="voice-card__visual" style="background-image:url('assets/images/voice-4-nakamura.jpg');">
+            <svg class="voice-card__visual-icon" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="38" r="20" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 100 C20 75 35 65 50 65 C65 65 80 75 80 100" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <div class="voice-card__meta">
+              <div class="voice-card__role">WAREHOUSE / 入社5年</div>
+              <div class="voice-card__name">中村 彩<small>Aya Nakamura</small></div>
+            </div>
+          </div>
+          <div class="voice-card__body">
+            <h3 class="voice-card__catch">「現場の声が、<br>ちゃんと届く会社」</h3>
+            <p class="voice-card__text">倉庫では入出庫や検品を担当しています。改善提案を出すとすぐに試してくれるので、自分たちで働きやすい現場をつくっている実感があります。資格取得の支援もあり、今はフォークリフトの次のステップに挑戦中です。</p>
           </div>
         </article>
       </div>
@@ -337,15 +385,18 @@
   </section>
 
   <!-- 福利厚生 -->
-  <section class="section">
+  <section class="section recruit-benefits-section">
     <div class="container">
-      <div class="section-header section-header--center fade-up">
-        <div class="section-label">Benefits</div>
-        <h2 class="section-title">
-          福利厚生
-          <span class="en-sub">Our Benefits</span>
-        </h2>
-        <p class="section-lead">「人に投資する」を経営理念の柱に置く、私たちの福利厚生をご紹介します。</p>
+      <div class="recruit-benefits-head fade-up">
+        <div>
+          <div class="section-label">WELFARE</div>
+          <h2 class="section-title">
+            長く働ける理由を、<br>制度で支える。
+            <span class="en-sub">Our Benefits</span>
+          </h2>
+          <p class="section-lead">「人に投資する」を経営理念の柱に置く、私たちの福利厚生をご紹介します。</p>
+        </div>
+        <div class="recruit-benefits-head__photo" style="background-image:url('assets/images/group-welfare.jpg');"></div>
       </div>
 
       <div class="benefits">
