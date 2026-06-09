@@ -38,6 +38,23 @@
     `<tr><th>${escapeHtml(row.label)}</th><td>${withBreaks(row.value)}</td></tr>`
   )).join('');
 
+  const renderSampleNotice = (notice) => {
+    const existing = document.querySelector('.sample-notice');
+    if (existing) existing.remove();
+    document.body.classList.remove('has-sample-notice');
+    if (!notice?.enabled) return;
+
+    const el = document.createElement('aside');
+    el.className = 'sample-notice';
+    el.setAttribute('aria-label', 'サンプルサイトの注記');
+    el.innerHTML = `
+      <div class="sample-notice__label">${escapeHtml(notice.label || 'サンプル')}</div>
+      <div class="sample-notice__text">${escapeHtml(notice.text || '')}</div>
+    `;
+    document.body.appendChild(el);
+    document.body.classList.add('has-sample-notice');
+  };
+
   const renderRecruitConfig = (cfg) => {
     const recruit = cfg.recruit || {};
 
@@ -168,6 +185,7 @@
         if (val) el.style.backgroundImage = `url('${val}')`;
       });
       renderRecruitConfig(cfg);
+      renderSampleNotice(cfg.sampleNotice);
     } catch (e) {
       /* ローカルfile://で開いた場合のフォールバック。HTMLのデフォルト値を使う。 */
     }

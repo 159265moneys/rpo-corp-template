@@ -16,6 +16,9 @@
 | company.email | info@example.co.jp | 問い合わせ導線 |
 | page.title | 採用情報 \| ミギノ運送株式会社 | SEOタイトル |
 | page.description | ミギノ運送株式会社の採用情報... | SEO説明文 |
+| sampleNotice.enabled | true | 固定サンプル注記の表示 |
+| sampleNotice.label | AI採用サイト サンプル | 固定注記のラベル |
+| sampleNotice.text | このページは公開情報をもとに... | 固定注記の本文 |
 | recruit.hero.line1 | 当たり前を | FV見出し1行目 |
 | recruit.hero.line2 | 届けるために | FV見出し2行目 |
 | recruit.hero.lead1 | いつでも、どこでも、 | FVリード1行目 |
