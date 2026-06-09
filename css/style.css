@@ -2663,26 +2663,14 @@ body.recruit-page.is-menu-open .header__nav {
   -webkit-text-stroke: 0;
 }
 
-.recruit-page .recruit-kinetic--hero {
-  top: 7vh;
-  z-index: 1;
-  opacity: 0.42;
-  mix-blend-mode: screen;
-}
-
-.recruit-page .recruit-kinetic--hero .recruit-kinetic__row span {
-  font-size: clamp(5rem, 13vw, 13.5rem);
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
-}
-
 .recruit-page .recruit-kinetic--intro {
-  top: 2.8rem;
-  opacity: 0.78;
+  top: 1.2rem;
+  opacity: 0.92;
 }
 
 .recruit-page .recruit-kinetic--jobs {
   top: 1.4rem;
-  opacity: 0.5;
+  opacity: 0.68;
 }
 
 .recruit-page .recruit-kinetic--jobs .recruit-kinetic__row span {
@@ -2691,14 +2679,14 @@ body.recruit-page.is-menu-open .header__nav {
 
 .recruit-page .recruit-kinetic--voices {
   bottom: 1.5rem;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .recruit-page .recruit-kinetic--benefits {
   top: 0.7rem;
   display: grid;
   gap: 0.6rem;
-  opacity: 0.7;
+  opacity: 0.95;
 }
 
 .recruit-page .recruit-kinetic--benefits .recruit-kinetic__row span {
@@ -2727,6 +2715,43 @@ body.recruit-page.is-menu-open .header__nav {
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
 }
 
+.recruit-page .recruit-kinetic--day {
+  top: 0.9rem;
+  opacity: 0.86;
+}
+
+.recruit-page .recruit-kinetic--day-bottom {
+  bottom: 1rem;
+  opacity: 0.5;
+}
+
+.recruit-page .recruit-kinetic--day .recruit-kinetic__row span,
+.recruit-page .recruit-kinetic--faq .recruit-kinetic__row span {
+  font-size: clamp(4.7rem, 12vw, 10.5rem);
+  -webkit-text-stroke-color: rgba(47, 143, 210, 0.24);
+}
+
+.recruit-page .recruit-kinetic--day-bottom .recruit-kinetic__row span {
+  font-size: clamp(3.4rem, 7vw, 6.5rem);
+}
+
+.recruit-page .recruit-kinetic--numbers {
+  top: 50%;
+  transform: translateY(-50%) rotate(-2deg);
+  opacity: 0.22;
+}
+
+.recruit-page .recruit-kinetic--numbers .recruit-kinetic__row span {
+  color: transparent;
+  font-size: clamp(4.2rem, 10vw, 9rem);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.72);
+}
+
+.recruit-page .recruit-kinetic--faq {
+  top: 1.2rem;
+  opacity: 0.76;
+}
+
 @keyframes recruitKinetic {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -2737,6 +2762,8 @@ body.recruit-page.is-menu-open .header__nav {
 .recruit-page .recruit-voices-section > .container,
 .recruit-page .recruit-benefits-section > .container,
 .recruit-page .section--dark > .container,
+.recruit-page .recruit-day-section > .container,
+.recruit-page .recruit-faq-section > .container,
 .recruit-page .recruit-cta > *:not(.recruit-kinetic) {
   position: relative;
   z-index: 2;
@@ -2745,6 +2772,8 @@ body.recruit-page.is-menu-open .header__nav {
 .recruit-page .recruit-intro,
 .recruit-page .recruit-voices-section,
 .recruit-page .recruit-benefits-section,
+.recruit-page .recruit-day-section,
+.recruit-page .recruit-faq-section,
 .recruit-page main > .section:not(.section--alt):not(.section--dark) {
   position: relative;
   overflow: hidden;
@@ -2753,7 +2782,9 @@ body.recruit-page.is-menu-open .header__nav {
 
 .recruit-page .recruit-intro::before,
 .recruit-page .recruit-voices-section::before,
-.recruit-page .recruit-benefits-section::before {
+.recruit-page .recruit-benefits-section::before,
+.recruit-page .recruit-day-section::before,
+.recruit-page .recruit-faq-section::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2995,6 +3026,8 @@ body.recruit-page.is-menu-open .header__nav {
 
 .recruit-page .day-flow {
   padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .recruit-page .day-flow__track {
@@ -3013,6 +3046,18 @@ body.recruit-page.is-menu-open .header__nav {
   padding: 0;
   background: #fff;
   box-shadow: 10px 10px 0 rgba(98,199,232,0.22);
+}
+
+.recruit-page .recruit-day-section {
+  background:
+    linear-gradient(152deg, rgba(47,143,210,0.12) 0 29%, transparent 29.2%),
+    linear-gradient(28deg, transparent 0 72%, rgba(255,122,33,0.1) 72.2%),
+    #f6fbff;
+}
+
+.recruit-page .recruit-day-section .section-header {
+  position: relative;
+  z-index: 2;
 }
 
 .recruit-page .day-flow__photo {
@@ -3109,6 +3154,18 @@ body.recruit-page.is-menu-open .header__nav {
   box-shadow: 14px 14px 0 rgba(98,199,232,0.22);
 }
 
+.recruit-page .recruit-faq-section {
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.72) 0 42%, transparent 42.2%),
+    linear-gradient(142deg, transparent 0 62%, rgba(98,199,232,0.18) 62.2% 76%, transparent 76.2%),
+    #f6fbff;
+}
+
+.recruit-page .recruit-faq-section .section-header {
+  position: relative;
+  z-index: 2;
+}
+
 .recruit-page .faq__item {
   border-color: rgba(47, 143, 210, 0.18);
 }
@@ -3169,14 +3226,11 @@ body.recruit-page.is-menu-open .header__nav {
     -webkit-text-stroke-width: 1px;
   }
 
-  .recruit-page .recruit-kinetic--hero {
-    top: 10vh;
-    opacity: 0.28;
-  }
-
   .recruit-page .recruit-kinetic--intro,
-  .recruit-page .recruit-kinetic--voices {
-    opacity: 0.42;
+  .recruit-page .recruit-kinetic--voices,
+  .recruit-page .recruit-kinetic--day,
+  .recruit-page .recruit-kinetic--faq {
+    opacity: 0.48;
   }
 
   .recruit-page .recruit-kinetic--jobs {
@@ -3185,6 +3239,11 @@ body.recruit-page.is-menu-open .header__nav {
   }
 
   .recruit-page .recruit-kinetic--benefits {
+    display: none;
+  }
+
+  .recruit-page .recruit-kinetic--day-bottom,
+  .recruit-page .recruit-kinetic--numbers {
     display: none;
   }
 
